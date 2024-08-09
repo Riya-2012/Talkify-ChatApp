@@ -183,6 +183,7 @@ $darkColor:#2f2d52;
                 }
             }
 
+    
             .userchat {
                 padding: 10px;
                 display: flex;
@@ -217,7 +218,7 @@ $darkColor:#2f2d52;
 
         }
 
-
+    
 
 
         .chat {
@@ -250,7 +251,7 @@ $darkColor:#2f2d52;
                 padding: 10px;
                 height: calc(100% - 160px);
                 overflow: scroll;
-
+overflow-x: hidden;
                 .message {
                     display: flex;
                     gap: 20px;
@@ -267,6 +268,7 @@ $darkColor:#2f2d52;
                             border-radius: 50%;
                             object-fit: cover;
                         }
+                        
                     }
 
                     .messagecontent {
@@ -289,6 +291,7 @@ $darkColor:#2f2d52;
 
                     &.owner {
                         flex-direction: row-reverse;
+                     
 
                         .messagecontent {
                             align-items: flex-end;

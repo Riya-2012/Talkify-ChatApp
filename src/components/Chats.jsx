@@ -32,7 +32,15 @@ export default function Chats() {
     }
   console.log(chats)
   return (
-    <div className='chats'>
+    <div className='chats'
+    style={{
+      height: '62.5vh', // Adjust height as needed
+      overflow: 'scroll',
+    overflowX:"hidden",
+      padding: '10px',
+      boxSizing: 'border-box',
+    
+    }}>
      {Object.entries(chats)
         ?.sort((a, b) => b[1].date - a[1].date)
         .map(([chatId, chat]) => {

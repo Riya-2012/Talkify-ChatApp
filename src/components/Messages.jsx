@@ -15,6 +15,8 @@ export default function Messages() {
       unSub()
     }
   },[data.chatId])
+  
+   
   return (
     
     <div className='messages' >
@@ -23,7 +25,7 @@ export default function Messages() {
           <Message message={m} key={m.id}/>
         ))
       }
-      
+    
     </div>
   )
 }
